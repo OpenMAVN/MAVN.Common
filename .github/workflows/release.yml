@@ -7,6 +7,8 @@ on:
 
 env:
   PROJECT: ./src/MAVN.Common/MAVN.Common.csproj
+  
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
 jobs:
   publish-release:
