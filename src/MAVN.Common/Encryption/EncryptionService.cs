@@ -142,6 +142,17 @@ namespace MAVN.Common.Encryption
             return _serializer.Serialize(value);
         }
 
+        /// <inheritdoc cref="IEncryptionService">
+        public bool IsEncrypted(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            return _serializer.IsEncrypted(value);
+        }
+
         /// <summary>
         /// Gets a list of encrypted properties for a type
         /// </summary>

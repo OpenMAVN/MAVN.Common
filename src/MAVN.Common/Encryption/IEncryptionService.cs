@@ -34,5 +34,12 @@
         /// <param name="value">Value to encrypt</param>
         /// <returns>Encrypted value</returns>
         string EncryptValue(string value);
+
+        /// <summary>
+        /// Checks if a value was encrypted.
+        /// </summary>
+        /// <param name="value">Value to check for encryption</param>
+        /// <returns>True if the value was encrypted, false otherwise</returns>
+        bool IsEncrypted(string value);
     }
 }
